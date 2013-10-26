@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+		<TextView android:id="@+id/defWord"
+	    		  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_margin="1dip" 
+				  android:text="friend ID: "/>
+				
+		<TextView android:id="@+id/friend_id"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_alignLeft="@id/defWord"
+				  android:layout_below="@id/defWord"
+				  android:layout_margin="1dip" />		
+		
+		<TextView android:id="@+id/defNoun"
+		       	  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_alignLeft="@id/defWord"
+				  android:layout_below="@id/friend_id"
+				  android:layout_margin="1dip"
+				  android:text="friend name: " />				
+
+		<TextView android:id="@+id/friend_name"				 
+			      android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:layout_alignLeft="@id/defWord"
+				  android:layout_below="@id/defNoun"
+				  android:layout_margin="1dip" />
+
+	      <Button
+	          android:id="@+id/post_button"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignParentRight="true"
+	          android:layout_centerVertical="true"
+	          android:text="Post" />
+
+	      <EditText
+	          android:id="@+id/editText"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_above="@+id/post_button"
+	          android:layout_alignParentLeft="true"
+	          android:ems="10" >
+
+	          <requestFocus />
+	      </EditText>
+
+	      <Button
+	          android:id="@+id/add_button"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_above="@+id/editText"
+	          android:layout_alignRight="@+id/friend_name"
+	          android:text="Add Friend" />
+
+	      <Button
+	          android:id="@+id/friendlist_button"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_alignBaseline="@+id/add_button"
+	          android:layout_alignBottom="@+id/add_button"
+	          android:layout_alignLeft="@+id/defWord"
+	          android:text="FriendList" />
+
+    <TextView
+        android:id="@+id/textwall1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/post_button"
+        android:layout_margin="5dip"
+        android:layout_marginTop="48dp"
+        android:text="Latest wall post: " />
+
+    <TextView
+        android:id="@+id/textwallbody1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignRight="@+id/textwall1"
+        android:layout_below="@+id/textwall1"
+        android:layout_margin="5dip"
+        android:text="No data" />
+	      
+	</RelativeLayout>
+
