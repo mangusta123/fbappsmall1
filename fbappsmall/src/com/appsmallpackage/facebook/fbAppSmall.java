@@ -45,13 +45,11 @@ import com.facebook.android.AsyncFacebookRunner.RequestListener;
 
 public class fbAppSmall extends Activity {
 
-    // Set Application ID to your registered app client_id
-    // See http://www.facebook.com/developers/createapp.php
-	
-    public static final String APP_ID = "466481623397336";
+   
+    public static final String APP_ID = "466481623397336";                      //App ID goes here  
 
     private static final String[] PERMISSIONS =
-        new String[] {"publish_stream", "read_stream", "offline_access"};       //more specific permissions 
+        new String[] {"publish_stream", "read_stream", "offline_access"};       //permissions to be granted by the user
     private TextView mText; 
     private static TextView postText;
     private static Button   notifButton;
@@ -66,7 +64,7 @@ public class fbAppSmall extends Activity {
     static WallPostRunnable runbl;
     private NewPostDetectService s;
     
-    static Handler mHandler = new Handler() {             //handler to modify wallpost text view
+    static Handler mHandler = new Handler() {                                   //handler to modify wallpost text view
         @Override
         public void handleMessage(Message msg) {
   	
@@ -82,7 +80,7 @@ public class fbAppSmall extends Activity {
     };
         
     static Handler bHandler = new Handler() {            // handler to modify notif.icon. (not called when
-        @Override                                 // user posts on his own wall)
+        @Override                                        // user posts on his own wall)
         public void handleMessage(Message msg) {
   	        	
         notifButton.setBackgroundColor(Color.RED);
