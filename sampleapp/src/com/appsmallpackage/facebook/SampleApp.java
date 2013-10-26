@@ -274,44 +274,8 @@ public class SampleApp extends Activity {
          * Called when the wall post request has completed
          */
         public void onComplete(final String response, Object state) {
-            Log.d("Facebook-Example", "Got response: " + response);
-                       
-            //parse response to get tokens and message body
-           
-    /*        String posterName;
-            
-            StringTokenizer st = new StringTokenizer(response, "{}\":,");
-           
-            while (st.hasMoreTokens()) {
-            
-            	if(st.nextToken().equals("name"))
-            	break;
-            }
-                      
-            posterName = st.nextToken();
-                      
-         //   SharedData.notiflist.add(posterName);
-                         
-            //make it red and increase label by 1
-             
-         //   Message msg1 = new Message();
-         //   bHandler.sendMessage(msg1);
-            
-            
-            while (st.hasMoreTokens()) {
-            
-            	if(st.nextToken().equals("message"))
-            	break;
-            }
-                         
-           Message msg2 = new Message();
-           msg2.obj = posterName + " posted: " + st.nextToken();
-           mHandler.sendMessage(msg2);
-           
-           SharedData.wallposts.add(msg2.obj.toString());
-           
-      //     listView.setAdapter(wallPostsAdapter);
-      */     
+            Log.d("Facebook-Example", "Got response: " + response);          
+       
         }
 
         @Override
@@ -505,7 +469,7 @@ public void onMalformedURLException(MalformedURLException e, Object state) {
         	Log.d("FB Sample App", "LoginDialogListener.onComplete()");
      
         	if(SharedData.wallposts.isEmpty())
-        	Log.e("WALLPOSTS","right after logging in, wallposts empty" );
+        	    Log.e("WALLPOSTS","right after logging in, wallposts empty" );
         	else
         		Log.e("WALLPOSTS", "not empty wtf");
         	

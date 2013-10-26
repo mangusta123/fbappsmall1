@@ -249,14 +249,7 @@ public void onComplete(final String response, Object state) {
                 
             	intent.putExtra("friends", "other");
             	
-                startActivity(intent);
-            	                    	
-            	/*
-            	friendsArrayAdapter = new FriendsArrayAdapter(
-                        SampleApp.this, R.layout.rowlayout, friends);
-                listView.setAdapter(friendsArrayAdapter);
-                friendsArrayAdapter.notifyDataSetChanged();
-                */
+                startActivity(intent);           	
                 
             }
         });
