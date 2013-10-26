@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FBAppSmall</string>
+    <string name="hello">Welcome. Press Menu to login into Facebook...</string>
+    <string name="post">Wall Post!</string>
+    <string name="friends">Get Friends</string>
+</resources>
