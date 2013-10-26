@@ -15,7 +15,8 @@ It makes use of Facebook Graph API in order to add functionality like
 
 -view friendlist and other personal info
 
-It is required to be registered in Facebook and grant permission to access personal 
-info (at least partially) in order to use this app.
+It is required to be registered in Facebook and to grant permission (at least partially) for accessing
+
+personal info in order to use this app.
 
 The app was created to play around with Facebook SDK and explore its capabilities and possible flaws.
