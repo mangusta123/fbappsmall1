@@ -145,7 +145,7 @@ public class fbAppSmall extends Activity {
    //     mAsyncRunner.request("me/feed", new NewWallFeedRequestListener()); //get latest wallpost now
 
       
-   //     startService(new Intent(SampleApp.this,NewPostDetectService.class));
+   //     startService(new Intent(fbAppSmall.this,NewPostDetectService.class));
         
     }
 
@@ -153,7 +153,7 @@ public class fbAppSmall extends Activity {
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
       super.onActivityResult(requestCode, resultCode, data);
-      Log.d("FB Sample App", "onActivityResult(): " + requestCode);
+      Log.d("FB AppSmall", "onActivityResult(): " + requestCode);
       mFacebook.authorizeCallback(requestCode, resultCode, data);
     }
 
@@ -219,7 +219,7 @@ public class fbAppSmall extends Activity {
                     	                    	
                     	/*
                     	friendsArrayAdapter = new FriendsArrayAdapter(
-                                SampleApp.this, R.layout.rowlayout, friends);
+                        fbAppSmall.this, R.layout.rowlayout, friends);
                         listView.setAdapter(friendsArrayAdapter);
                         friendsArrayAdapter.notifyDataSetChanged();
                         */
@@ -462,11 +462,11 @@ public void onMalformedURLException(MalformedURLException e, Object state) {
         public void onComplete(Bundle values) {
             final String postId = values.getString("post_id");
             if (postId != null) {
-                Log.d("FB Sample App", "Dialog Success! post_id=" + postId);
+                Log.d("FB AppSmall", "Dialog Success! post_id=" + postId);
                                 
                 mAsyncRunner.request(postId, new WallPostRequestListener());
             } else {
-                Log.d("FB Sample App", "No wall post made");
+                Log.d("FB AppSmall", "No wall post made");
             }
         }
 
@@ -502,7 +502,7 @@ public void onMalformedURLException(MalformedURLException e, Object state) {
         public void onComplete(Bundle values) {
             // Process onComplete
         	
-        	Log.d("FB Sample App", "LoginDialogListener.onComplete()");
+        	Log.d("FB AppSmall", "LoginDialogListener.onComplete()");
      
         	if(SharedData.wallposts.isEmpty())
         	Log.e("WALLPOSTS","right after logging in, wallposts empty" );
@@ -528,7 +528,7 @@ public void onMalformedURLException(MalformedURLException e, Object state) {
          */
         public void onFacebookError(FacebookError error) {
             // Process error
-            Log.d("FB Sample App", "LoginDialogListener.onFacebookError()");
+            Log.d("FB AppSmall", "LoginDialogListener.onFacebookError()");
         }
 
         /**
@@ -536,7 +536,7 @@ public void onMalformedURLException(MalformedURLException e, Object state) {
          */
         public void onError(DialogError error) {
             // Process error message
-            Log.d("FB Sample App", "LoginDialogListener.onError()");
+            Log.d("FB AppSmall", "LoginDialogListener.onError()");
         }
 
         /**
@@ -544,7 +544,7 @@ public void onMalformedURLException(MalformedURLException e, Object state) {
          */
         public void onCancel() {
             // Process cancel message
-            Log.d("FB Sample App", "LoginDialogListener.onCancel()");
+            Log.d("FB AppSmall", "LoginDialogListener.onCancel()");
    }
     }
 
@@ -568,9 +568,9 @@ public void onMalformedURLException(MalformedURLException e, Object state) {
         	
         	SharedData.notiflist.clear();                                       //clear notifications list
         	                                                                    //so that they don't mess up with
-        	fbAppSmall.this.runOnUiThread(new Runnable() {                       //next user's notifications
+        	fbAppSmall.this.runOnUiThread(new Runnable() {                      //next user's notifications
                 public void run() {
-                    mText.setText("Thanks for using FB Sample App. Bye bye...");
+                    mText.setText("Thanks for using FB AppSmall. Bye bye...");
                     friends.clear();
                     //friendsArrayAdapter.notifyDataSetChanged();
                 }
