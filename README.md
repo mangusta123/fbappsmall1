@@ -3,7 +3,7 @@ fbappsmall1
 
 Facebook-based simple social network for Android (Facebook App ID = 466481623397336) 
 
-This app is a simple model of a social network, created as an additional layer over original Facebook
+This app is a simple model of a social network, created as an additional layer over original Facebook.
 It makes use of Facebook Graph API in order to add functionality like
 
 -post/read wallposts
