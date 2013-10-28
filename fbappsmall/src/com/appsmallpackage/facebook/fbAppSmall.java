@@ -1,5 +1,3 @@
-
-
 package com.appsmallpackage.facebook;
 
 import java.io.FileNotFoundException;
