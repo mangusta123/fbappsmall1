@@ -19,9 +19,11 @@ It is required to be registered in Facebook and to grant permission (at least pa
 
 personal info in order to use this app.
 
-Furthermore it is required to have Facebook SDK (available on GitHub) installed and checked as library in 
+Furthermore it is required to have Facebook SDK (available on GitHub by this linkbelow:
 
-the project properties in order to compile this app and build its APK file.
+https://github.com/facebook/facebook-android-sdk/) installed and checked as library in the project properties
+
+in order to compile this app and build its APK file.
 
 The app was created to play around with Facebook SDK and explore its capabilities and possible flaws.
 
