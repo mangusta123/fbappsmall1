@@ -9,7 +9,7 @@ It makes use of Facebook Graph API in order to add functionality like
 
 -post/read wallposts
 
--send/receive friend requests
+-send/receive/accept friend requests
 
 -receive notifications
 
